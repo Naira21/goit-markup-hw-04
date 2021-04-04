@@ -460,19 +460,21 @@ address {
   width: 16px;
   height: 12px;
   margin-right: 10px;
+  fill: var(--link-paragraph-color);
 }
 
 .smartphone-icon {
   width: 10px;
   height: 16px;
   margin-right: 10px;
+  fill: var(--link-paragraph-color);
 }
 
 .contacts-link:hover .mail-icon,
 .contacts-list:hover .smartphone-icon,
 .contacts-link:focus .mail-icon,
 .contacts-list:focus .smartphone-icon {
-  stroke: var(--logo-button-color);
+  fill: var(--logo-button-color);
 }
 
 .link:hover,
@@ -514,4 +516,54 @@ address {
 .social-icons-link:hover .social-icon,
 .social-icons-link:focus .social-icon {
   fill: var(--main-bg-text-color);
+}
+
+/*Клиенты*/
+.clients-list {
+  display: flex;
+}
+
+.client:not(:last-child) {
+  margin-right: 30px;
+}
+.client {
+  width: 170px;
+  height: 90px;
+}
+
+.client-link:hover,
+.client-link:focus {
+  border: 1px solid var(--logo-button-color);
+}
+.client-link:hover .client-icon {
+  fill: var(--logo-button-color);
+}
+
+.client-icon {
+  fill: var(--social-link);
+  width: 44.27px;
+  height: 49.23px;
+}
+.client-icon:hover,
+.client-icon:focus {
+  fill: var(--logo-button-color);
+}
+.clients-bg {
+  background-color: var(--main-bg-text-color);
+}
+.client-link {
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--social-link);
+  display: flex;
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+}
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  margin-bottom: 50px;
 }
