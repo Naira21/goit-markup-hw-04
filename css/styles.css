@@ -44,6 +44,7 @@ img {
   --accent--text-color: black;
   --link-footer: rgba(255, 255, 255, 0.6);
   --hero-bg: rgba(47, 48, 58, 0.4);
+  --social-link: #afb1b8;
 }
 
 body {
@@ -114,9 +115,13 @@ body {
 .contacts-item:not(:last-child) {
   margin-right: 50px;
 }
+
 .contacts-list {
   display: flex;
   margin-left: auto;
+}
+.contacts-list:hover {
+  color: var(--logo-button-color);
 }
 
 .nav-link {
@@ -254,7 +259,15 @@ ul {
   line-height: 1.71;
   margin-bottom: 0px;
 }
-
+.feature-picture {
+  background-color: #f5f4fa;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+}
 .activity-bg.section {
   padding-top: 0;
 }
@@ -307,7 +320,7 @@ ul {
   line-height: 1.9;
   color: var(--link-paragraph-color);
   letter-spacing: 0.03em;
-  margin-bottom: 0px;
+  margin-bottom: 16px;
 }
 /*Кнопки*/
 button {
@@ -353,9 +366,12 @@ button:active {
   border-color: transparent;
 }
 
-a:active,
-a:hover,
-a:focus {
+link:active,
+link:hover,
+link:focus,
+.nav-item:hover,
+.nav-item:active,
+.nav-item:focus {
   color: var(--logo-button-color);
 }
 
@@ -436,4 +452,66 @@ address {
   text-decoration: inherit;
   margin-bottom: 20px;
   display: block;
+}
+
+/*Иконки*/
+
+.mail-icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+
+.smartphone-icon {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.contacts-link:hover .mail-icon,
+.contacts-list:hover .smartphone-icon,
+.contacts-link:focus .mail-icon,
+.contacts-list:focus .smartphone-icon {
+  stroke: var(--logo-button-color);
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+
+.feature-icon {
+  width: 70px;
+  height: 70px;
+}
+
+.social-icons-list {
+  display: inline-flex;
+}
+
+.social-icons-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.social-icons-item + .social-icons-item {
+  margin-left: 10px;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--social-link);
+}
+
+.social-icons-link:hover,
+.social-icons-link:focus {
+  background-color: var(--logo-button-color);
+}
+.social-icons-link:hover .social-icon,
+.social-icons-link:focus .social-icon {
+  fill: var(--main-bg-text-color);
 }
