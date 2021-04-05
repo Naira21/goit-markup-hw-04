@@ -169,7 +169,6 @@ a {
 .site-nav,
 .feature-list,
 .team-list,
-.portfolio-list,
 .portfolio-item,
 .activity-list,
 .link,
@@ -411,9 +410,13 @@ link:focus,
 }
 
 .portfolio-item {
-  box-sizing: border-box;
-  width: 370px;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
+/*.box-sizing: border-box;
+  width: 370px;
+}*/
 
 .portfolio-item:hover {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -429,6 +432,7 @@ link:focus,
   margin-top: 30px;
   margin-left: 30px;
 }
+
 /*Футер*/
 footer {
   background-color: var(--second-bg-color);
@@ -496,7 +500,7 @@ address {
 
 .link:hover,
 .link:focus {
-  color: var(--accent-color);
+  color: var(--logo-button-color);
 }
 
 .feature-icon {
