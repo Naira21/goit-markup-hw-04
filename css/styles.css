@@ -178,6 +178,7 @@ a {
 
 .hero-bg {
   height: 600px;
+  width: 1600px;
   display: flex;
   align-items: center;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -568,8 +569,6 @@ address {
 
 .client-icon {
   fill: var(--social-link);
-  width: 44.27px;
-  height: 49.23px;
 }
 .client-icon:hover,
 .client-icon:focus {
